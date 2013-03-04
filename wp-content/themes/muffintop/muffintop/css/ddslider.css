@@ -1,0 +1,147 @@
+/* images container - This is the most important container - Don't change important properties */
+.slider_banner {
+    list-style: none !important;
+    overflow: hidden !important;
+    position: relative !important;
+    height: 380px;
+    width: 1180px;
+}
+
+/* each slider item - Nothing to change here */
+.slider_banner li {
+
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+/* Don't edit this part */
+.slider_banner li.current {
+
+    display: block;
+    z-index: 2 !important;
+
+}
+
+/* Don't edit this part */
+.slider_banner li.next {
+
+    display: block;
+    z-index: 1 !important;
+
+}
+
+/* Don't edit this part - prevents inline lists from being hidden */
+.slider_banner li ul li {
+
+    display: block !important;
+    position: relative !important;
+
+}
+
+
+
+
+/*------------------------
+--------------- LEFT ARROW
+------------------------*/
+
+/* Sets position and main configs */
+.slider_arrow_left {
+
+    height: 90px;
+    width: 40px;
+    cursor: pointer !important;
+    float: left;
+    position: absolute;
+    top: 160px;
+    z-index: 50 !important;
+    background: url("../images/arrow-left.png");
+}
+
+.slider_arrow_left_hover:hover{
+    height: 90px;
+    width: 40px;
+    float: left;
+    position: absolute;
+    top: 160px;
+    background: url("../images/arrow-left-hover.png");
+}
+
+/* left arrow image */
+
+
+/*------------------------
+-------------- RIGHT ARROW
+------------------------*/
+
+/* Sets position and main configs */
+.slider_arrow_right {
+
+    height: 90px;
+    width: 40px;
+    cursor: pointer;
+    float: right;
+    top: 160px;
+    position: absolute;
+    z-index: 50;
+    background: url("../images/arrow-right.png");
+    margin-left: 1140px;
+
+}
+
+/* Right arrow Background
+.slider_arrow_right {
+
+    background: url(images/arrow-right.png) no-repeat top left;
+
+}*/
+
+
+
+
+/*------------------------
+---------------- SELECTORS
+------------------------*/
+
+/* Sets configs for selectors containers : absolute positioned in relation to #slider */
+.slider_selector, .slider_selector_dis {
+
+    bottom: 10px;
+    list-style: none;
+    margin: 0 0 0 5px;
+    position: absolute;
+    right: 100px;
+    z-index: 50;
+
+}
+
+/* Sets image of selectors */
+.slider_selector li, .slider_selector_dis li {
+
+    display: block !important;
+    background: url("http://1.s3.envato.com/files/339668/images/slider_selector.png") no-repeat top left;
+    cursor: pointer;
+    float: left;
+    margin: 0 3px !important;
+    height: 10px !important;
+    position: relative !important;
+    width: 10px !important;
+
+}
+
+/* Sets the current selector */
+.slider_selector li.current, .slider_selector_dis li.current {
+
+    background: url("http://1.s3.envato.com/files/339668/images/slider_selector_current.png") no-repeat top left;
+
+}
+
+/* Disables the selectors */
+.slider_selector_dis li {
+
+    cursor: default !important;
+    z-index: 50;
+
+}
